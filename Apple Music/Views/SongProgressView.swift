@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct SongProgressView: View {
     
     @State private var speed = 50.0
     @State private var isEditing = false
+    
     
     var body: some View {
         VStack {
@@ -24,7 +26,11 @@ struct SongProgressView: View {
             
             HStack(alignment: .center, spacing: 80) {
                 Image(systemName: "backward.fill").scaleEffect(2).foregroundColor(.white)
-                Image(systemName: "play.fill").scaleEffect(3).foregroundColor(.white)
+                
+                Button(action: playMusic) {
+                    Image(systemName: "play.fill").scaleEffect(3).foregroundColor(.white)
+                }
+                
                 Image(systemName: "forward.fill").scaleEffect(2).foregroundColor(.white)
             }.padding([.top, .bottom], 30)
             
@@ -48,6 +54,16 @@ struct SongProgressView: View {
             }
         }
     }
+    
+    
+    func playMusic() {
+        let player = AVPlayer()
+        let fileUrl = Bundle.main.url(forResource: "起风了", withExtension: "m4a")!
+        let playerItem = AVPlayerItem(url: fileUrl)
+        player.replaceCurrentItem(with: playerItem)
+        player.play()
+    }
+    
 }
 
 struct SongProgressView_Previews: PreviewProvider {

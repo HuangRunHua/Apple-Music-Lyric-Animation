@@ -11,6 +11,7 @@ struct MusicLyrics: View {
     
     @State var song: Song
     @EnvironmentObject var songStore: SongStore
+    @EnvironmentObject var playStore: PlayStore
     
     
     init(song: Song) {
@@ -40,8 +41,20 @@ struct MusicLyrics: View {
                     }
                 }
             }
+            .onReceive(playStore.objectWillChange) {
+                withAnimation(.linear) {
+                    print(playStore.noBlurCellIndex)
+                    if playStore.noBlurCellIndex != 0 {
+                        proxy.scrollTo(songs[0].lyrics[playStore.noBlurCellIndex-1].id, anchor: .top)
+                    } else {
+                        proxy.scrollTo(songs[0].lyrics[playStore.noBlurCellIndex].id, anchor: .top)
+                    }
+                }
+            }
         }
     }
+    
+    
 }
 
 struct MusicLyrics_Previews: PreviewProvider {

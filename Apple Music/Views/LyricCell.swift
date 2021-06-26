@@ -12,6 +12,7 @@ struct LyricCell: View {
     @State var lyric: Lyric
     
     @EnvironmentObject var songStore: SongStore
+    @EnvironmentObject var playStore: PlayStore
     
     
     var lyricIndex: Int {
@@ -42,6 +43,7 @@ struct LyricCell: View {
         songStore.isListChanged = true
         
         songStore.noBlurCellIndex = index
+        songStore.currentTime = songStore.allSongs[0].lyrics[index].time
         print(songStore.noBlurCellIndex)
     }
 }

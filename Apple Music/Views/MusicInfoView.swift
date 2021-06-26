@@ -16,17 +16,17 @@ struct MusicInfoView: View {
             
             Image(song.cover)
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: 60, height: 60)
                 .cornerRadius(5)
                 .shadow(color: .gray, radius: 5, y: 2)
             
             VStack(alignment: .leading, spacing: 5) {
                 Text(song.name)
                     .foregroundColor(.white)
-                    .font(.system(size: 15, weight: .bold, design: .default))
+                    .font(.system(size: 16, weight: .bold, design: .default))
                 Text(song.singer)
                     .foregroundColor(.gray)
-                    .font(.system(size: 15, weight: .bold, design: .default))
+                    .font(.system(size: 16, weight: .bold, design: .default))
             }
             
             Spacer()
@@ -34,7 +34,7 @@ struct MusicInfoView: View {
             Image(systemName: "ellipsis.circle.fill")
                 .foregroundColor(.white)
                 .opacity(0.8)
-                .scaleEffect(1.5)
+                .scaleEffect(1.6)
         }
     }
 }

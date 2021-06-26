@@ -12,9 +12,11 @@ struct Apple_MusicApp: App {
     var body: some Scene {
         
         let songStore = SongStore()
+        let playStore = PlayStore()
         
         WindowGroup {
             PlayView().environmentObject(songStore)
+                .environmentObject(playStore)
         }
     }
 }

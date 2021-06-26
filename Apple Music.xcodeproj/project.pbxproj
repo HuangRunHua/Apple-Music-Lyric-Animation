@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD645000268719DB007B53B8 /* 起风了.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BD644FFF268719DB007B53B8 /* 起风了.m4a */; };
 		BDFD1C512686B6A9006C37A5 /* Apple_MusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD1C502686B6A9006C37A5 /* Apple_MusicApp.swift */; };
 		BDFD1C532686B6A9006C37A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD1C522686B6A9006C37A5 /* ContentView.swift */; };
 		BDFD1C552686B6AB006C37A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFD1C542686B6AB006C37A5 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD644FFF268719DB007B53B8 /* 起风了.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "起风了.m4a"; sourceTree = "<group>"; };
 		BDFD1C4D2686B6A9006C37A5 /* Apple Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFD1C502686B6A9006C37A5 /* Apple_MusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_MusicApp.swift; sourceTree = "<group>"; };
 		BDFD1C522686B6A9006C37A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD644FFE268718D8007B53B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD644FFF268719DB007B53B8 /* 起风了.m4a */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BDFD1C442686B6A8006C37A5 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 				BDFD1C6F2686E41B006C37A5 /* LyricCell.swift */,
 				BDFD1C672686CA0D006C37A5 /* SongProgressView.swift */,
 				BDFD1C692686D2F6006C37A5 /* PlayView.swift */,
+				BD644FFE268718D8007B53B8 /* Resources */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 			files = (
 				BDFD1C582686B6AB006C37A5 /* Preview Assets.xcassets in Resources */,
 				BDFD1C552686B6AB006C37A5 /* Assets.xcassets in Resources */,
+				BD645000268719DB007B53B8 /* 起风了.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
