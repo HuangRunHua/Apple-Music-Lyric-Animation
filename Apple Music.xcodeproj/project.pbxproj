@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD236E90268970830064DE7B /* video.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD236E8E268970830064DE7B /* video.jpg */; };
+		BD236E91268970830064DE7B /* Intro.png in Resources */ = {isa = PBXBuildFile; fileRef = BD236E8F268970830064DE7B /* Intro.png */; };
 		BD645000268719DB007B53B8 /* 起风了.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BD644FFF268719DB007B53B8 /* 起风了.m4a */; };
 		BDFD1C512686B6A9006C37A5 /* Apple_MusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD1C502686B6A9006C37A5 /* Apple_MusicApp.swift */; };
 		BDFD1C532686B6A9006C37A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD1C522686B6A9006C37A5 /* ContentView.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD236E8E268970830064DE7B /* video.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video.jpg; sourceTree = "<group>"; };
+		BD236E8F268970830064DE7B /* Intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intro.png; sourceTree = "<group>"; };
 		BD644FFF268719DB007B53B8 /* 起风了.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "起风了.m4a"; sourceTree = "<group>"; };
 		BDFD1C4D2686B6A9006C37A5 /* Apple Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFD1C502686B6A9006C37A5 /* Apple_MusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_MusicApp.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		BD644FFE268718D8007B53B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BD236E8F268970830064DE7B /* Intro.png */,
+				BD236E8E268970830064DE7B /* video.jpg */,
 				BD644FFF268719DB007B53B8 /* 起风了.m4a */,
 			);
 			path = Resources;
@@ -177,8 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFD1C582686B6AB006C37A5 /* Preview Assets.xcassets in Resources */,
+				BD236E91268970830064DE7B /* Intro.png in Resources */,
 				BDFD1C552686B6AB006C37A5 /* Assets.xcassets in Resources */,
 				BD645000268719DB007B53B8 /* 起风了.m4a in Resources */,
+				BD236E90268970830064DE7B /* video.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
